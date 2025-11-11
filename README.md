@@ -1,4 +1,4 @@
-# Tài liệu Chi tiết Script Training ViViT trên UCF-101
+Training ViViT trên UCF-101
 
 ## 1. Tổng quan
 

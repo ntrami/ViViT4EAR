@@ -1,0 +1,37 @@
+# ViViT Training Requirements
+# 
+# IMPORTANT: PyTorch must be installed separately with CUDA 12.6 support
+# 
+# For RTX 5090 (compute capability 12.0) - Use nightly:
+#   pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu126
+# 
+# For other GPUs (up to sm_90) - Use stable:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+# 
+# Then install other requirements:
+#   pip install -r requirements.txt
+#
+# Or use the automated install script:
+#   bash install_requirements.sh
+
+# Hugging Face Transformers (for ViViT model)
+transformers>=4.30.0
+
+# PyTorchVideo (for video data loading and ViViT models)
+pytorchvideo>=0.1.5
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Progress bars
+tqdm>=4.64.0
+
+# Machine learning utilities (for train_test_split)
+scikit-learn>=1.0.0
+
+# Video processing (for pytorchvideo)
+av>=10.0.0
+
+# Image processing (for video preprocessing)
+Pillow>=9.0.0
